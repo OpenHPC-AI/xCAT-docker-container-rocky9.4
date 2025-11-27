@@ -5,7 +5,7 @@ This xCAT Docker image is built on Rocky Linux 9.6 and is fully supported for si
 
 Before building the xCAT container image, you must install the Rocky Linux 9.4 base image into your environment.
 
-🏁 Step 1: Install Rocky Linux 9.4 Base Image
+🏁 **Step 1: Install Rocky Linux 9.4 Base Image**
 
 Use the GitHub repository to download and install the Rocky Linux 9.4 base image.
 
