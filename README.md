@@ -13,7 +13,7 @@ Use the GitHub repository to download and install the Rocky Linux 9.4 base image
 # This step is mandatory before building the xCAT container image.
 
 ```
-[https://github.com/OpenHPC-AI/rocky-linux-9.4](https://github.com/OpenHPC-AI/rocky-linux-9.-)
+https://github.com/OpenHPC-AI/rocky-linux-9.4](https://github.com/OpenHPC-AI/rocky-linux-9.-
 ```
 
 📌 Why this is required?
