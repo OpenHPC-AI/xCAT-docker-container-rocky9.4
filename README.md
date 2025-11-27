@@ -7,12 +7,14 @@ Before building the xCAT container image, you must install the Rocky Linux 9.4 b
 
 🏁 Step 1: Install Rocky Linux 9.4 Base Image
 
-Use the official GitHub repository to download and install the Rocky Linux 9.4 base image.
+Use the GitHub repository to download and install the Rocky Linux 9.4 base image.
 
 # Follow this GitHub link to install the Rocky Linux 9.4 base image
 # This step is mandatory before building the xCAT container image.
 
+```
 https://github.com/OpenHPC-AI/rocky-linux-9.4
+```
 
 📌 Why this is required?
 
