@@ -27,3 +27,18 @@ Without installing this base image, the subsequent build steps will fail.
 
 Once the Rocky Linux 9.4 base image is available in your environment,
 you may proceed with building the xCAT container image as described in the next steps of this documentation.
+
+🏁 **Step 2:  Build xCAT docker container image based on rocky9.4**
+
+**Copy xcat docker container image code in to your env.**
+
+```bash
+# git clone the code in your environment
+git clone https://github.com/OpenHPC-AI/xCAT-docker-container-rocky9.4.git
+```
+**Build xCAT Contanier Image**
+
+```bash
+cd xCAT-docker-container-rocky9.4
+docker build --network host  -t xcat_rocky9.4:2.17.0 .
+```
