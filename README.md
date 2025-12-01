@@ -42,3 +42,34 @@ git clone https://github.com/OpenHPC-AI/xCAT-docker-container-rocky9.4.git
 cd xCAT-docker-container-rocky9.4
 docker build --network host  -t xcat_rocky9.4:2.17.0 .
 ```
+**Once the xCAT container image is built successfully, verify it.**
+
+```bash
+docker images | grep xcat_rocky9.4:2.17.0
+```
+
+🏁 **Step 3: Create the xCAT Container on a Single Server Node**
+
+```bash
+cd portable
+
+# Update the dev.env file for your environment, then copy it to .env
+cp dev.env .env
+
+# After updating the environment file, create the container using run.sh
+bash run.sh
+
+```
+✅ **Verify the xCAT Container**
+
+```bash
+docker ps | grep xcat
+
+# Verify that the xCAT service is up and running
+docker exec -it <xcat-container-name> lsxcatd -a
+
+```
+
+Note:
+By default, xCAT uses SQLite as its backend database.
+However, this container is configured to use MySQL for improved performance and reliability.
