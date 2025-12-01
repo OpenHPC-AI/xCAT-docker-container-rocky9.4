@@ -9,7 +9,7 @@ Before building the xCAT container image, you must install the Rocky Linux 9.4 b
 
 Use the GitHub repository to download and install the Rocky Linux 9.4 base image.
 
-**Follow this GitHub link to install the Rocky Linux 9.4 base image**
+**Follow this GitHub link to install the Rocky Linux 9.4 base image.**
 ***This step is mandatory before building the xCAT container image.***
 
 
