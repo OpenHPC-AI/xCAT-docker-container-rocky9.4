@@ -55,6 +55,7 @@ cd portable
 cp dev.env .env
 
 # After updating the environment file, create the container using run.sh
+# Modify the run.sh file to reflect the hostname and container name specific to your environment.
 bash run.sh
 
 ```
