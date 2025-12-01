@@ -42,7 +42,7 @@ git clone https://github.com/OpenHPC-AI/xCAT-docker-container-rocky9.4.git
 cd xCAT-docker-container-rocky9.4
 docker build --network host  -t xcat_rocky9.4:2.17.0 .
 ```
-**Once the xCAT container image is built successfully, verify it.**
+✅ **Once the xCAT container image is built successfully, verify it.**
 
 ```bash
 docker images | grep xcat_rocky9.4:2.17.0
