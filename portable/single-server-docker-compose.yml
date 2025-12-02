@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  xcat:
+    image: xcat_rocky9.4:2.17.0
+    container_name: xcat
+    env_file:
+      - .env
+
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /drbd/xcatdata:/xcatdata
+      - /drbd/var_log_xcat:/var/log/xcat
+      - /drbd/xcat_mysqldata:/var/lib/mysql
+      - /drbd/xcatcont_sshkey/.ssh:/root/.ssh
+
+    # Swarm "network_mode: host" is valid here also
+    network_mode: host
+
+    # Equivalent to Swarm restart_policy
+    restart: always
