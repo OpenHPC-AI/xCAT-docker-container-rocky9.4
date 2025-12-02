@@ -54,12 +54,13 @@ cd portable
 # Update the dev.env file for your environment, then copy it to .env
 cp dev.env .env
 
+# After updating the environment file,
 # Create xCAT container using docker-compose file
 docker-compose -f single-server-docker-compose.yml up -d
 
 (OR)
 
-# After updating the environment file, create the container using run.sh
+# create the container using run.sh
 # Modify the run.sh file to reflect the hostname and container name specific to your environment.
 bash run.sh
 
